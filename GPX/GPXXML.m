@@ -366,7 +366,7 @@
 		// element may contain no atributes and would return nil while looking for element name end
 		// <tile> 
 		// find end of element name
-		char * elementNameEnd = strpbrk(xmlElement->name," /");
+		char * elementNameEnd = strpbrk(xmlElement->name," /\n\t");
 		
 		
 		// if end was found check for attributes
